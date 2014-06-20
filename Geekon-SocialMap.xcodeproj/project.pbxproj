@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68899C13194F5E4E004188CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68899C12194F5E4E004188CD /* Foundation.framework */; };
+		68899C15194F5E4E004188CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68899C14194F5E4E004188CD /* CoreGraphics.framework */; };
+		68899C17194F5E4E004188CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68899C16194F5E4E004188CD /* UIKit.framework */; };
+		68899C1D194F5E4E004188CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68899C1B194F5E4E004188CD /* InfoPlist.strings */; };
+		68899C1F194F5E4E004188CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68899C1E194F5E4E004188CD /* main.m */; };
+		68899C23194F5E4F004188CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68899C22194F5E4F004188CD /* AppDelegate.m */; };
+		68899C26194F5E4F004188CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68899C24194F5E4F004188CD /* Main_iPhone.storyboard */; };
+		68899C29194F5E4F004188CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68899C27194F5E4F004188CD /* Main_iPad.storyboard */; };
+		68899C2C194F5E4F004188CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68899C2B194F5E4F004188CD /* ViewController.m */; };
+		68899C2E194F5E4F004188CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68899C2D194F5E4F004188CD /* Images.xcassets */; };
+		68899C35194F5E4F004188CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68899C34194F5E4F004188CD /* XCTest.framework */; };
+		68899C36194F5E4F004188CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68899C12194F5E4E004188CD /* Foundation.framework */; };
+		68899C37194F5E4F004188CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68899C16194F5E4E004188CD /* UIKit.framework */; };
+		68899C3F194F5E4F004188CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68899C3D194F5E4F004188CD /* InfoPlist.strings */; };
+		68899C41194F5E4F004188CD /* Geekon_SocialMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68899C40194F5E4F004188CD /* Geekon_SocialMapTests.m */; };
+		68899C4B194F690D004188CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68899C4A194F690D004188CD /* MapKit.framework */; };
+		68899CD8195120D8004188CD /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 68899CD2195120D8004188CD /* CJSONDeserializer.m */; };
+		68899CD9195120D8004188CD /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 68899CD4195120D8004188CD /* CJSONSerializer.m */; };
+		68899CDA195120D8004188CD /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 68899CD7195120D8004188CD /* NSDictionary_JSONExtensions.m */; };
+		68899CE019520ACF004188CD /* myAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 68899CDF19520ACF004188CD /* myAnnotation.m */; };
+		99ED323F19521EF100B8FB25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99ED323E19521EF100B8FB25 /* CoreLocation.framework */; };
+		99ED32451952601900B8FB25 /* deals.png in Resources */ = {isa = PBXBuildFile; fileRef = 99ED32411952601900B8FB25 /* deals.png */; };
+		99ED32461952601900B8FB25 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 99ED32421952601900B8FB25 /* default.png */; };
+		99ED32471952601900B8FB25 /* events.png in Resources */ = {isa = PBXBuildFile; fileRef = 99ED32431952601900B8FB25 /* events.png */; };
+		99ED32481952601900B8FB25 /* food_and_drinks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99ED32441952601900B8FB25 /* food_and_drinks.jpg */; };
+		99ED324C1953380E00B8FB25 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 99ED324B1953380E00B8FB25 /* default.png */; };
+		99FED0EB1953417C00890611 /* current_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 99FED0EA1953417C00890611 /* current_location.png */; };
+		99FED0EF19534DA400890611 /* fire_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 99FED0EC19534DA400890611 /* fire_large.png */; };
+		99FED0F019534DA400890611 /* fire_med.png in Resources */ = {isa = PBXBuildFile; fileRef = 99FED0ED19534DA400890611 /* fire_med.png */; };
+		99FED0F119534DA400890611 /* fire_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 99FED0EE19534DA400890611 /* fire_small.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68899C38194F5E4F004188CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68899C07194F5E4E004188CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68899C0E194F5E4E004188CD;
+			remoteInfo = "Geekon-SocialMap";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68899C0F194F5E4E004188CD /* Geekon-SocialMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geekon-SocialMap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68899C12194F5E4E004188CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68899C14194F5E4E004188CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68899C16194F5E4E004188CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68899C1A194F5E4E004188CD /* Geekon-SocialMap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Geekon-SocialMap-Info.plist"; sourceTree = "<group>"; };
+		68899C1C194F5E4E004188CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68899C1E194F5E4E004188CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68899C20194F5E4E004188CD /* Geekon-SocialMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Geekon-SocialMap-Prefix.pch"; sourceTree = "<group>"; };
+		68899C21194F5E4F004188CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68899C22194F5E4F004188CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68899C25194F5E4F004188CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		68899C28194F5E4F004188CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		68899C2A194F5E4F004188CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		68899C2B194F5E4F004188CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68899C2D194F5E4F004188CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		68899C33194F5E4F004188CD /* Geekon-SocialMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geekon-SocialMapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68899C34194F5E4F004188CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		68899C3C194F5E4F004188CD /* Geekon-SocialMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Geekon-SocialMapTests-Info.plist"; sourceTree = "<group>"; };
+		68899C3E194F5E4F004188CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68899C40194F5E4F004188CD /* Geekon_SocialMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Geekon_SocialMapTests.m; sourceTree = "<group>"; };
+		68899C4A194F690D004188CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		68899CD1195120D8004188CD /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		68899CD2195120D8004188CD /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		68899CD3195120D8004188CD /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		68899CD4195120D8004188CD /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		68899CD5195120D8004188CD /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		68899CD6195120D8004188CD /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		68899CD7195120D8004188CD /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		68899CDE19520ACF004188CD /* myAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myAnnotation.h; sourceTree = "<group>"; };
+		68899CDF19520ACF004188CD /* myAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myAnnotation.m; sourceTree = "<group>"; };
+		99ED323E19521EF100B8FB25 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		99ED32411952601900B8FB25 /* deals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deals.png; sourceTree = "<group>"; };
+		99ED32421952601900B8FB25 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		99ED32431952601900B8FB25 /* events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = events.png; sourceTree = "<group>"; };
+		99ED32441952601900B8FB25 /* food_and_drinks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food_and_drinks.jpg; sourceTree = "<group>"; };
+		99ED324B1953380E00B8FB25 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		99FED0EA1953417C00890611 /* current_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = current_location.png; path = images/current_location.png; sourceTree = "<group>"; };
+		99FED0EC19534DA400890611 /* fire_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_large.png; sourceTree = "<group>"; };
+		99FED0ED19534DA400890611 /* fire_med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_med.png; sourceTree = "<group>"; };
+		99FED0EE19534DA400890611 /* fire_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_small.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68899C0C194F5E4E004188CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99ED323F19521EF100B8FB25 /* CoreLocation.framework in Frameworks */,
+				68899C4B194F690D004188CD /* MapKit.framework in Frameworks */,
+				68899C15194F5E4E004188CD /* CoreGraphics.framework in Frameworks */,
+				68899C17194F5E4E004188CD /* UIKit.framework in Frameworks */,
+				68899C13194F5E4E004188CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68899C30194F5E4F004188CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68899C35194F5E4F004188CD /* XCTest.framework in Frameworks */,
+				68899C37194F5E4F004188CD /* UIKit.framework in Frameworks */,
+				68899C36194F5E4F004188CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68899C06194F5E4E004188CD = {
+			isa = PBXGroup;
+			children = (
+				99FED0EA1953417C00890611 /* current_location.png */,
+				99ED32401952601900B8FB25 /* images */,
+				68899CDE19520ACF004188CD /* myAnnotation.h */,
+				68899CDF19520ACF004188CD /* myAnnotation.m */,
+				68899CD0195120D8004188CD /* Source */,
+				68899C18194F5E4E004188CD /* Geekon-SocialMap */,
+				68899C3A194F5E4F004188CD /* Geekon-SocialMapTests */,
+				68899C11194F5E4E004188CD /* Frameworks */,
+				68899C10194F5E4E004188CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68899C10194F5E4E004188CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68899C0F194F5E4E004188CD /* Geekon-SocialMap.app */,
+				68899C33194F5E4F004188CD /* Geekon-SocialMapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68899C11194F5E4E004188CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99ED323E19521EF100B8FB25 /* CoreLocation.framework */,
+				68899C4A194F690D004188CD /* MapKit.framework */,
+				68899C12194F5E4E004188CD /* Foundation.framework */,
+				68899C14194F5E4E004188CD /* CoreGraphics.framework */,
+				68899C16194F5E4E004188CD /* UIKit.framework */,
+				68899C34194F5E4F004188CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68899C18194F5E4E004188CD /* Geekon-SocialMap */ = {
+			isa = PBXGroup;
+			children = (
+				68899C21194F5E4F004188CD /* AppDelegate.h */,
+				68899C22194F5E4F004188CD /* AppDelegate.m */,
+				68899C24194F5E4F004188CD /* Main_iPhone.storyboard */,
+				68899C27194F5E4F004188CD /* Main_iPad.storyboard */,
+				68899C2A194F5E4F004188CD /* ViewController.h */,
+				68899C2B194F5E4F004188CD /* ViewController.m */,
+				68899C2D194F5E4F004188CD /* Images.xcassets */,
+				68899C19194F5E4E004188CD /* Supporting Files */,
+			);
+			path = "Geekon-SocialMap";
+			sourceTree = "<group>";
+		};
+		68899C19194F5E4E004188CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99ED324B1953380E00B8FB25 /* default.png */,
+				68899C1A194F5E4E004188CD /* Geekon-SocialMap-Info.plist */,
+				68899C1B194F5E4E004188CD /* InfoPlist.strings */,
+				68899C1E194F5E4E004188CD /* main.m */,
+				68899C20194F5E4E004188CD /* Geekon-SocialMap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68899C3A194F5E4F004188CD /* Geekon-SocialMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				68899C40194F5E4F004188CD /* Geekon_SocialMapTests.m */,
+				68899C3B194F5E4F004188CD /* Supporting Files */,
+			);
+			path = "Geekon-SocialMapTests";
+			sourceTree = "<group>";
+		};
+		68899C3B194F5E4F004188CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68899C3C194F5E4F004188CD /* Geekon-SocialMapTests-Info.plist */,
+				68899C3D194F5E4F004188CD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68899CD0195120D8004188CD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				68899CD1195120D8004188CD /* CJSONDeserializer.h */,
+				68899CD2195120D8004188CD /* CJSONDeserializer.m */,
+				68899CD3195120D8004188CD /* CJSONSerializer.h */,
+				68899CD4195120D8004188CD /* CJSONSerializer.m */,
+				68899CD5195120D8004188CD /* JSONRepresentation.h */,
+				68899CD6195120D8004188CD /* NSDictionary_JSONExtensions.h */,
+				68899CD7195120D8004188CD /* NSDictionary_JSONExtensions.m */,
+			);
+			name = Source;
+			path = "Geekon-SocialMap/Source";
+			sourceTree = "<group>";
+		};
+		99ED32401952601900B8FB25 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				99FED0EC19534DA400890611 /* fire_large.png */,
+				99FED0ED19534DA400890611 /* fire_med.png */,
+				99FED0EE19534DA400890611 /* fire_small.png */,
+				99ED32411952601900B8FB25 /* deals.png */,
+				99ED32421952601900B8FB25 /* default.png */,
+				99ED32431952601900B8FB25 /* events.png */,
+				99ED32441952601900B8FB25 /* food_and_drinks.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68899C0E194F5E4E004188CD /* Geekon-SocialMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68899C44194F5E4F004188CD /* Build configuration list for PBXNativeTarget "Geekon-SocialMap" */;
+			buildPhases = (
+				68899C0B194F5E4E004188CD /* Sources */,
+				68899C0C194F5E4E004188CD /* Frameworks */,
+				68899C0D194F5E4E004188CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Geekon-SocialMap";
+			productName = "Geekon-SocialMap";
+			productReference = 68899C0F194F5E4E004188CD /* Geekon-SocialMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68899C32194F5E4F004188CD /* Geekon-SocialMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68899C47194F5E4F004188CD /* Build configuration list for PBXNativeTarget "Geekon-SocialMapTests" */;
+			buildPhases = (
+				68899C2F194F5E4F004188CD /* Sources */,
+				68899C30194F5E4F004188CD /* Frameworks */,
+				68899C31194F5E4F004188CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68899C39194F5E4F004188CD /* PBXTargetDependency */,
+			);
+			name = "Geekon-SocialMapTests";
+			productName = "Geekon-SocialMapTests";
+			productReference = 68899C33194F5E4F004188CD /* Geekon-SocialMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68899C07194F5E4E004188CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = OrdersTeam1;
+				TargetAttributes = {
+					68899C32194F5E4F004188CD = {
+						TestTargetID = 68899C0E194F5E4E004188CD;
+					};
+				};
+			};
+			buildConfigurationList = 68899C0A194F5E4E004188CD /* Build configuration list for PBXProject "Geekon-SocialMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68899C06194F5E4E004188CD;
+			productRefGroup = 68899C10194F5E4E004188CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68899C0E194F5E4E004188CD /* Geekon-SocialMap */,
+				68899C32194F5E4F004188CD /* Geekon-SocialMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68899C0D194F5E4E004188CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68899C29194F5E4F004188CD /* Main_iPad.storyboard in Resources */,
+				99ED32471952601900B8FB25 /* events.png in Resources */,
+				68899C2E194F5E4F004188CD /* Images.xcassets in Resources */,
+				99ED32451952601900B8FB25 /* deals.png in Resources */,
+				99FED0EF19534DA400890611 /* fire_large.png in Resources */,
+				99FED0EB1953417C00890611 /* current_location.png in Resources */,
+				99FED0F119534DA400890611 /* fire_small.png in Resources */,
+				68899C26194F5E4F004188CD /* Main_iPhone.storyboard in Resources */,
+				68899C1D194F5E4E004188CD /* InfoPlist.strings in Resources */,
+				99ED32481952601900B8FB25 /* food_and_drinks.jpg in Resources */,
+				99ED32461952601900B8FB25 /* default.png in Resources */,
+				99FED0F019534DA400890611 /* fire_med.png in Resources */,
+				99ED324C1953380E00B8FB25 /* default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68899C31194F5E4F004188CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68899C3F194F5E4F004188CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68899C0B194F5E4E004188CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68899C2C194F5E4F004188CD /* ViewController.m in Sources */,
+				68899C23194F5E4F004188CD /* AppDelegate.m in Sources */,
+				68899CE019520ACF004188CD /* myAnnotation.m in Sources */,
+				68899CD9195120D8004188CD /* CJSONSerializer.m in Sources */,
+				68899CD8195120D8004188CD /* CJSONDeserializer.m in Sources */,
+				68899CDA195120D8004188CD /* NSDictionary_JSONExtensions.m in Sources */,
+				68899C1F194F5E4E004188CD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68899C2F194F5E4F004188CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68899C41194F5E4F004188CD /* Geekon_SocialMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68899C39194F5E4F004188CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68899C0E194F5E4E004188CD /* Geekon-SocialMap */;
+			targetProxy = 68899C38194F5E4F004188CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68899C1B194F5E4E004188CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68899C1C194F5E4E004188CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		68899C24194F5E4F004188CD /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68899C25194F5E4F004188CD /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		68899C27194F5E4F004188CD /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68899C28194F5E4F004188CD /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		68899C3D194F5E4F004188CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68899C3E194F5E4F004188CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68899C42194F5E4F004188CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68899C43194F5E4F004188CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68899C45194F5E4F004188CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Geekon-SocialMap/Geekon-SocialMap-Prefix.pch";
+				INFOPLIST_FILE = "Geekon-SocialMap/Geekon-SocialMap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		68899C46194F5E4F004188CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Geekon-SocialMap/Geekon-SocialMap-Prefix.pch";
+				INFOPLIST_FILE = "Geekon-SocialMap/Geekon-SocialMap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		68899C48194F5E4F004188CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Geekon-SocialMap.app/Geekon-SocialMap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Geekon-SocialMap/Geekon-SocialMap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Geekon-SocialMapTests/Geekon-SocialMapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		68899C49194F5E4F004188CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Geekon-SocialMap.app/Geekon-SocialMap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Geekon-SocialMap/Geekon-SocialMap-Prefix.pch";
+				INFOPLIST_FILE = "Geekon-SocialMapTests/Geekon-SocialMapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68899C0A194F5E4E004188CD /* Build configuration list for PBXProject "Geekon-SocialMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68899C42194F5E4F004188CD /* Debug */,
+				68899C43194F5E4F004188CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68899C44194F5E4F004188CD /* Build configuration list for PBXNativeTarget "Geekon-SocialMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68899C45194F5E4F004188CD /* Debug */,
+				68899C46194F5E4F004188CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68899C47194F5E4F004188CD /* Build configuration list for PBXNativeTarget "Geekon-SocialMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68899C48194F5E4F004188CD /* Debug */,
+				68899C49194F5E4F004188CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68899C07194F5E4E004188CD /* Project object */;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9106EDE5-6C42-4205-8E97-00292DBDB4D7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Geekon-SocialMap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A56E9E8A-0670-40CD-BA12-604A9F5B79BE</key>
+		<string>https://github.groupondev.com/wenxu/Geekon-SocialMap</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Geekon-SocialMap.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A56E9E8A-0670-40CD-BA12-604A9F5B79BE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.groupondev.com/wenxu/Geekon-SocialMap</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A56E9E8A-0670-40CD-BA12-604A9F5B79BE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A56E9E8A-0670-40CD-BA12-604A9F5B79BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Geekon-SocialMap</string>
+		</dict>
+	</array>
+</dict>
+</plist>
